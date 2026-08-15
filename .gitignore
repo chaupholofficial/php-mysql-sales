@@ -1,0 +1,17 @@
+# File cấu hình môi trường (Chứa mật khẩu DB, quan trọng nhất!)
+.env
+
+# Thư mục code của các thư viện PHP (Nếu bạn cài composer sau này)
+/vendor
+
+# Thư mục rác của VS Code, macOS, Windows
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# File cấu hình Docker thừa (Nếu có)
+docker-compose.override.yml
+
+# Volume database (Nếu bạn mount trực tiếp vào thư mục project)
+mysql_data/
