@@ -9,6 +9,9 @@ services:
       - ./public:/var/www/html
       - ./src:/var/www/src
     environment:
+    environment:
+      TZ: Asia/Ho_Chi_Minh
+      # các biến môi trường cũ giữ nguyên...
           MYSQL_DATABASE: ${MYSQL_DATABASE}
           MYSQL_USER: ${MYSQL_USER}
           MYSQL_PASSWORD: ${MYSQL_PASSWORD}
@@ -17,6 +20,9 @@ services:
   db:
     image: mysql:8.4
     environment:
+    environment:
+      TZ: Asia/Ho_Chi_Minh
+      # các biến môi trường cũ giữ nguyên...
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
       MYSQL_USER: ${MYSQL_USER}
