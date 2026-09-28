@@ -1,14 +1,14 @@
 SET NAMES utf8mb4;
 
 CREATE TABLE categories (
-    CategoryID INT AUTO_INCREMENT PRIMARY KEY,
+    CategoryID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     CategoryName VARCHAR(200) NOT NULL,
     Description TEXT
 ) CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE suppliers (
-    SupplierID INT AUTO_INCREMENT PRIMARY KEY,
+    SupplierID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     SupplierName VARCHAR(200) NOT NULL,
     ContactName VARCHAR(100),
     Address VARCHAR(200),
@@ -20,7 +20,7 @@ CREATE TABLE suppliers (
   COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE customers (
-    CustomerID INT AUTO_INCREMENT PRIMARY KEY,
+    CustomerID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     CustomerName VARCHAR(100) NOT NULL,
     ContactName VARCHAR(100),
     Address VARCHAR(200),
@@ -31,7 +31,7 @@ CREATE TABLE customers (
   COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE employees (
-    EmployeeID INT AUTO_INCREMENT PRIMARY KEY,
+    EmployeeID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     LastName VARCHAR(50) NOT NULL,
     FirstName VARCHAR(50) NOT NULL,
     BirthDate DATE,
@@ -41,14 +41,14 @@ CREATE TABLE employees (
   COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE shippers (
-    ShipperID INT AUTO_INCREMENT PRIMARY KEY,
+    ShipperID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     ShipperName VARCHAR(100) NOT NULL,
     Phone VARCHAR(20)
 ) CHARACTER SET utf8mb4
   COLLATE utf8mb4_unicode_ci;
 
 CREATE TABLE products (
-    ProductID INT AUTO_INCREMENT PRIMARY KEY,
+    ProductID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     ProductCode VARCHAR(50) NOT NULL UNIQUE,
     ProductName VARCHAR(255) NOT NULL,
     Description TEXT,
