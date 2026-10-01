@@ -13,13 +13,13 @@ $cartCount = array_sum($_SESSION['cart'] ?? []);
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav me-auto">
                 <li class="nav-item">
-                    <a class="navbar-link" href="/">Trang chủ</a>
+                    <a class="nav-link" href="/">Trang chủ</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-link" href="/products.php">Sản phẩm</a>
+                    <a class="nav-link" href="/products.php">Sản phẩm</a>
                 </li>
                 <li class="nav-item">
-                    <a class="navbar-link" href="#">Tin tức</a>
+                    <a class="nav-link" href="/news.php">Tin tức</a>
                 </li>
             </ul>
             <div class="d-flex align-items-center">
